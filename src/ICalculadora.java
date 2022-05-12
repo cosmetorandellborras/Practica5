@@ -7,5 +7,5 @@ public interface ICalculadora {
 	
 	public abstract int multiplicacion (int x, int y);
 	
-	public abstract int division (int x, int y);
+	public abstract float division (float x, float y);
 }

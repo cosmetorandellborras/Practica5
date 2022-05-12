@@ -16,7 +16,7 @@ public class Calculadora implements ICalculadora{
 		return x*y;
 	}
 	
-	public int division(int x, int y) {
+	public float division(float x, float y) {
 		return x/y;
 	}
 }

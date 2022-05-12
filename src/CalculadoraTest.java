@@ -6,22 +6,30 @@ class CalculadoraTest {
 
 	@Test
 	void testSuma() {
-		fail("Not yet implemented");
+		Calculadora calc = new Calculadora();
+		int res = calc.suma(5,2);
+		assertEquals(7, res);
 	}
 
 	@Test
 	void testResta() {
-		fail("Not yet implemented");
+		Calculadora calc = new Calculadora();
+		int res = calc.resta(5, 2);
+		assertEquals(3,res);
 	}
 
 	@Test
 	void testMultiplicacion() {
-		fail("Not yet implemented");
+		Calculadora calc = new Calculadora();
+		int res = calc.multiplicacion(5, 2);
+		assertEquals(10,res);
 	}
 
 	@Test
 	void testDivision() {
-		fail("Not yet implemented");
+		Calculadora calc = new Calculadora();
+		float res = calc.division(5, 2);
+		assertEquals(2.5,res);
 	}
 
 }
