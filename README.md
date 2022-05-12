@@ -6,7 +6,7 @@ Crear una clase Calculadora que implemente los metodos de la interfaz y seguidam
 Finalmente repasaremos los resultados obtenidos
 
 ## Diagrama de ramas y commits del proyecto
-![DiagramaDeVersiones](https://github.com/cosmetorandellborras/Practica5/blob/main/Diagrama%20de%20versiones.png)
+![DiagramaDeVersiones](https://github.com/cosmetorandellborras/Practica5/blob/master/capturas/Diagrama%20de%20versiones.png)
 
 ## Paso 1
 En primer lugar creamos la interfaz ICalculadora con las operaciones sumar, restar, multiplicar y dividir.
@@ -41,8 +41,8 @@ Finalmente realizamos el primer commit a Github de nuestro proyecto, asi como el
 
 ## Paso 2 - Crear tests Unitarios con JUnit en IDE Eclipse
 En primer lugar, clickamos botón derecho sobre la clase que queremos testear y creamos un nuevo "JUnit Test Case", que llamaremos CalculadoraTest, clicamos sobre "next" y seguidamente marcaremos todos los metodos que queremos testear y le damos a "finalizar".
-![JUnit1](https://github.com/cosmetorandellborras/Practica5/blob/main/JUnit1.png)
-![JUnit2](https://github.com/cosmetorandellborras/Practica5/blob/main/JUnit2.png)
+![JUnit1](https://github.com/cosmetorandellborras/Practica5/blob/master/capturas/JUnit1.png)
+![JUnit2](https://github.com/cosmetorandellborras/Practica5/blob/master/capturas/JUnit2.png)
 
 Seguidamente en nuestro nueva clase CalculadoraTest, implementamos los tests unitarios de cada método. Para ello en cada método haremos lo siguiente:
 
@@ -71,13 +71,13 @@ Una vez realizado este paso, realizaremos el segundo commit, con la versión 1.1
 ## Paso 3 - Realización de tests unitarios con JUnit
 
 Partiendo de los tests unitarios creados, situandonos sobre la clase CalculadoraTest, click derecho y seleccionamos la opción "Run As JUnit Test"
-![RunAsTest](https://github.com/cosmetorandellborras/Practica5/blob/main/RunTest.png)
+![RunAsTest](https://github.com/cosmetorandellborras/Practica5/blob/master/capturas/RunTest.png)
 
 Seguidamente nos lanzará los tests y nos indicará el resultado obtenido, en nuestro caso podemos comprobar como ha fallado el metodo division
-![Test1](https://github.com/cosmetorandellborras/Practica5/blob/main/Test1.png)
+![Test1](https://github.com/cosmetorandellborras/Practica5/blob/master/capturas/Test1.png)
 
 En la siguiente captura, nos indica en detalle que se esperaba un resultado de 2.5 y el resultado obtenido es de 2, de ahi el error
-![Test2](https://github.com/cosmetorandellborras/Practica5/blob/main/Test2.png)
+![Test2](https://github.com/cosmetorandellborras/Practica5/blob/master/capturas/Test2.png)
 
 Analizando el código comprobamos que hay un error en el tipo de datos que maneja el metodo dividir. Procedemos a cambiar el tipo de datos a "float" y realizaremos un commit con el error subsanado siendo esta, la version 1.2.0
 
@@ -85,8 +85,8 @@ Analizando el código comprobamos que hay un error en el tipo de datos que manej
 
 Mediante los cambios realizados en el ultimo commit, volvemos a ejecutar los tests unitarios con los mismos valores ejecutados anteriormente, recordemos el valor 5 para la x y el valor 2 para la y.
 Como podemos comprobar en este caso se ha subsanado el error ya que los tests unitarios no dan ningún tipo de error.
-![Test3](https://github.com/cosmetorandellborras/Practica5/blob/main/Test3.png)
-![Test4](https://github.com/cosmetorandellborras/Practica5/blob/main/Test4.png)
+![Test3](https://github.com/cosmetorandellborras/Practica5/blob/master/capturas/Test3.png)
+![Test4](https://github.com/cosmetorandellborras/Practica5/blob/master/capturas/Test4.png)
 
 Seguidamente realizaremos los mismos tests variando los valores introducidos por parámetro, para comprobar los resultados con nuevos valores. 
 ~~~
@@ -127,7 +127,7 @@ class CalculadoraTest {
 }
 ~~~
 Volvemos a ejecutar las pruebas y el resultado obtenido es positivo, ningún metodo ha dado error
-![Test5](https://github.com/cosmetorandellborras/Practica5/blob/main/Test5.png)
+![Test5](https://github.com/cosmetorandellborras/Practica5/blob/master/capturas/Test5.png)
 
 Finalmente realizaremos un test final con valores por parámetro negativos
 ~~~
@@ -168,7 +168,7 @@ class CalculadoraTest {
 }
 ~~~
 Volvemos a ejecutar las pruebas y el resultado obtenido es positivo, ningún metodo ha dado error
-![Test6](https://github.com/cosmetorandellborras/Practica5/blob/main/Test6.png)
+![Test6](https://github.com/cosmetorandellborras/Practica5/blob/master/capturas/Test6.png)
 
 **Con esto concluimos que nuestro proyecto ha superado nuestras pruebas unitarias con diferentes valores y supuestos**
 Salvo en las primeras pruebas unitarias en las que nos ha fallado un metodo, por lo tanto un 25% de las pruebas. Después de solventar el error el resultado de nuestras pruebas unitarias ha sido del 100% de éxito.
